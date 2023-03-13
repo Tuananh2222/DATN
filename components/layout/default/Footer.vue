@@ -2,55 +2,48 @@
   <footer class="site-footer">
     <div class="container">
       <div class="content-footer">
-        <h6>About</h6>
-        Với triết lý kinh doanh đặt khách hàng là trọng tâm, <i>NyLy</i> xin hứa sẽ không ngừng cải thiện để nâng cao
-        chất lượng sản phẩm, dịch vụ, mang đến cho Quý khách hàng những trải nghiệm mua sắm tốt nhất để đáp lại sự tin
-        tưởng của bạn dành cho chúng tôi. Hy vọng trong thời gian sắp tới, chúng tôi sẽ tiếp tục nhận được sự tin tưởng
-        của bạn. Một lần nữa, chúng tôi xin gửi lời cảm ơn chân thành đến Quý khách hàng. Chúc bạn luôn có nhiều sức
-        khỏe, may mắn và thành công!
+        <h4>Opening Hours</h4>
+        <div class="group-xs">
+          <div>
+            <dl class="list-desc">
+              <dt>Weekdays:</dt>
+              <dd class="text-gray-darker"><span>8:00–20:00</span></dd>
+            </dl>
+          </div>
+          <div>
+            <dl class="list-desc">
+              <dt>Weekends:</dt>
+              <dd class="text-gray-darker"><span>9:00–18:00</span></dd>
+            </dl>
+          </div>
+        </div>
       </div>
 
       <div class="category-wrapper">
-        <h6>Customer Service</h6>
+        <h4>Address</h4>
         <ul class="footer-links">
           <li class="menu-item">
-            <a href="#">FAQ</a>
+            <dl class="list-desc">
+              <dt><font-awesome-icon icon="fa-solid fa-location-dot" /></dt>
+              <dd><a class="link link-gray-darker" href="#">6036 Richmond hwy., Alexandria, VA, 2230</a></dd>
+            </dl>
           </li>
           <li class="menu-item">
-            <a href="#">Returns & Refunds</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Cookie Guidelines</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Delivery Information</a>
+            <dl class="list-desc">
+              <dt><font-awesome-icon icon="fa-solid fa-phone" /></dt>
+              <dd class="text-gray-darker">Call Us: <a class="link link-gray-darker" href="tel:#">971935724</a></dd>
+            </dl>
           </li>
         </ul>
       </div>
 
       <div class="myself-wrapper">
-        <h6>NyLy Store</h6>
-        <ul class="footer-links">
-          <li><a href="http://scanfcode.com/about/">About Us</a></li>
-          <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-          <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Our Journals</a></li>
-          <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="http://scanfcode.com/sitemap/">Affiliate Programme</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr />
-    <div class="container-icon">
-      <div class="icon-wrapper">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li>
-              <a class="facebook" href="#"><font-awesome-icon icon="fa-brands fa-facebook-f" /></a>
-            </li>
-            <li>
-              <a class="linkedin" href="#"><font-awesome-icon icon="fa-brands fa-linkedin-in" /></a>
-            </li>
-          </ul>
+        <h4>Join Our Newsletter</h4>
+        <div class="email-wrapper">
+          <text-box :placeholder="'Enter your email'" />
+          <div class="btn-normal-gradient" type="submit">
+            <span>Subscribe</span>
+          </div>
         </div>
       </div>
     </div>
@@ -60,29 +53,51 @@
 <script lang="ts" setup></script>
 <style lang="scss" scoped>
 .site-footer {
-  background-color: #26272b;
+  display: flex;
+  margin: 20px auto 0 auto;
+  background-color: #f3f3f3;
+  width: 95%;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
   .container {
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     .content-footer {
-      width: 50%;
+      width: calc(100% / 3);
+      .group-xs {
+        display: flex;
+        .list-desc {
+          display: flex;
+          margin-right: 10px;
+          .text-gray-darker {
+            color: #000;
+          }
+        }
+      }
     }
     .category-wrapper {
-      width: 25%;
+      width: calc(100% / 3);
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .myself-wrapper {
-      width: 25%;
+      width: calc(100% / 3);
       display: flex;
       flex-direction: column;
-      align-items: center;
+      .email-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn-normal-gradient {
+          margin-top: 7px;
+        }
+      }
     }
   }
   .container-icon {
@@ -94,6 +109,12 @@
     }
   }
 }
+.list-desc {
+  display: flex;
+  dd {
+    margin-inline-start: 10px;
+  }
+}
 .site-footer hr {
   border-top-color: #bbb;
   opacity: 0.5;
@@ -101,12 +122,13 @@
 .site-footer hr.small {
   margin: 20px 0;
 }
-.site-footer h6 {
-  color: #fff;
-  font-size: 16px;
+.site-footer h4 {
+  color: #151515;
+  font-size: 24px;
   text-transform: uppercase;
   margin-top: 5px;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 .site-footer a {
   color: #737373;
