@@ -1,0 +1,26 @@
+[
+    {
+        "text": "Trang chủ",
+        "to":"/"
+    },
+    {
+        "text": "Sản phẩm hot",
+        "to":"/selling-products"
+    },
+    {
+        "text": "Chăm sóc da",
+        "to":"/skin-care"
+    },
+    {
+        "text": "Trang điểm",
+        "to":"/make-up"
+    },
+    {
+        "text": "Deal khuyến mãi",
+        "to":"/promotional-deals"
+    },
+    {
+        "text": "NyLy's blog",
+        "to":"/blog"
+    }
+]
