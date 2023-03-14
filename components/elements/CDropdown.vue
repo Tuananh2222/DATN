@@ -71,6 +71,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  iconName: {
+    type: String,
+    default: '',
+  },
   // disable
   status: {
     type: Boolean,
