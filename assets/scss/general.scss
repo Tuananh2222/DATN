@@ -89,7 +89,7 @@ p {
   margin-inline-end: 0px;
 }
 
-// css class for button
+// button
 @mixin btn(
   $typeButton: '',
   $typeColor: '',
@@ -172,5 +172,50 @@ p {
     .btn-#{$typeButton}-#{$typeColor} {
       @include btn($typeButton, $typeColor, $colorValue);
     }
+  }
+}
+
+@mixin beauty-scroll($marginY: 0, $heightScroll: '') {
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin: $marginY 0;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+    @if ($heightScroll != '') {
+      height: $heightScroll;
+    }
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #babac0;
+  }
+  &.small::-webkit-scrollbar {
+    width: 3px;
+  }
+  &.small::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+}
+
+// icon
+@mixin icon($name: '', $size: 24px, $color: $dark-color) {
+  @if $name != '' {
+    mask-image: url('/icon/' + $name + '.svg');
+  }
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: $color;
+  width: $size;
+  height: $size;
+  @content;
+}
+
+@each $iconName in $icons_name {
+  .icon-#{$iconName} {
+    @include icon($iconName);
   }
 }

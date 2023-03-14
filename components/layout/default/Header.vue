@@ -70,7 +70,7 @@ const nextPageUser = ({ router }: { router: string }) => {
   left: 0;
   z-index: 6;
   padding: 10px 0;
-
+  margin-bottom: 20px;
   @include sp {
     width: calc(100% + 20px);
     margin-left: -10px;

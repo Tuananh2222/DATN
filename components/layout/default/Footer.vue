@@ -54,7 +54,7 @@
 <style lang="scss" scoped>
 .site-footer {
   display: flex;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
   background-color: #f3f3f3;
   width: 95%;
   padding: 45px 0 20px;
@@ -67,13 +67,22 @@
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @include sp {
+      flex-direction: column;
+    }
     .content-footer {
       width: calc(100% / 3);
+      @include sp {
+        width: 100%;
+      }
       .group-xs {
         display: flex;
         .list-desc {
           display: flex;
           margin-right: 10px;
+          @include sp {
+            margin-right: 5px;
+          }
           .text-gray-darker {
             color: #000;
           }
@@ -85,11 +94,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include sp {
+        width: 100%;
+        align-items: flex-start;
+      }
     }
     .myself-wrapper {
       width: calc(100% / 3);
       display: flex;
       flex-direction: column;
+      @include sp {
+        width: 100%;
+      }
       .email-wrapper {
         display: flex;
         justify-content: center;
@@ -113,6 +129,9 @@
   display: flex;
   dd {
     margin-inline-start: 10px;
+    @include sp {
+      margin-inline-start: 5px;
+    }
   }
 }
 .site-footer hr {
