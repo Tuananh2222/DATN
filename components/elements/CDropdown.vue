@@ -103,9 +103,9 @@ const onFocusOut = () => {
 
 const paddingStyle = computed(() => {
   if (props.icon) {
-    return 'pading-icon'
+    return 'padding-icon'
   } else {
-    return 'pading-normal'
+    return 'padding-normal'
   }
 })
 const borderBackgroundStyle = computed(() => {
@@ -287,10 +287,10 @@ const toggle = () => {
   border: 1px solid #dee1dc;
   padding: 1px;
 }
-.pading-icon {
+.padding-icon {
   padding-left: 42px;
 }
-.pading-normal {
+.padding-normal {
   padding-left: 12px;
 }
 
