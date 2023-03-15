@@ -1,12 +1,11 @@
 import { reactive } from 'vue'
 import { email, required, maxLength, helpers } from '@vuelidate/validators'
 import axios from 'axios'
-import { VoucherState } from '~~/utils/types/state/voucher'
+import { contactState } from '~~/utils/types/state/about'
 
-export const useVoucherStore = defineStore('voucher', () => {
-
+export const useContactStore = defineStore('about', () => {
   const { $axios } = useNuxtApp()
-  const state = reactive<VoucherState>({
+  const state = reactive<contactState>({
     username: '',
     tel: '',
     email: '',
@@ -34,12 +33,11 @@ export const useVoucherStore = defineStore('voucher', () => {
 
   const { handleAPICommon } = useApiCommon()
 
-
   return { state, checkField, $v, checkAllField, isValidForm }
 })
-export default useVoucherStore
+export default useContactStore
 
 // https://pinia.vuejs.org/cookbook/hot-module-replacement.html
 if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useVoucherStore, import.meta.hot))
+  import.meta.hot.accept(acceptHMRUpdate(useContactStore, import.meta.hot))
 }

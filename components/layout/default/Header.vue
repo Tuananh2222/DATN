@@ -5,17 +5,12 @@
       <div class="main-logo"></div>
     </div>
     <div class="header-menu">
-      <li
-        v-for="(item, index) in state.headerList"
-        :key="index"
-        class="menu-item"
-        @click="emits('nextTo', { router: item.to })"
-      >
+      <li v-for="(item, index) in headerList" :key="index" class="menu-item" @click="nextPageUser(item.to)">
         <a>{{ item.text }}</a>
       </li>
     </div>
     <div class="header-icons">
-      <div class="icon">
+      <div class="icon" @click="handleLogin">
         <font-awesome-icon icon="fa-user" />
       </div>
       <div class="icon">
@@ -37,6 +32,7 @@ const { state, init } = useHeaderStore()
 const emits = defineEmits(['nextTo'])
 onMounted(() => {
   init()
+  // console.log(state.headerList)
 })
 const isShowSearch = ref(false)
 
@@ -47,9 +43,35 @@ const handleHideSearch = () => {
   isShowSearch.value = false
 }
 
-const nextPageUser = ({ router }: { router: string }) => {
+const nextPageUser = (router: any) => {
   navigateTo(router)
 }
+const handleLogin = () => {
+  navigateTo('/login')
+}
+
+const headerList = [
+  {
+    text: 'Trang chủ',
+    to: '/',
+  },
+  {
+    text: 'About US',
+    to: '/about',
+  },
+  {
+    text: 'Contact',
+    to: '/contact',
+  },
+  {
+    text: 'Typography',
+    to: '/typography',
+  },
+  {
+    text: 'Blog',
+    to: '/blog',
+  },
+]
 </script>
 
 <style lang="scss" scoped>

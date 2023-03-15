@@ -61,19 +61,7 @@
         </div>
         <div class="cell-sm-6">
           <p class="text-uppercase">Arrival</p>
-          <!-- <div class="form-wrap">
-              <label class="form-label form-label-icon" for="date-in"
-                ><span class="icon icon-primary fa-calendar"></span><span>Check-in Date</span></label
-              >
-              <input
-                class="form-input"
-                id="date-in"
-                data-time-picker="date"
-                type="text"
-                name="date"
-                data-constraints="@Required"
-              />
-            </div> -->
+          <CDatePicker />
         </div>
         <div class="cell-sm-6">
           <p class="text-uppercase">Departure</p>
@@ -172,6 +160,147 @@
       </div>
     </div>
   </div>
+  <div class="gallery-content">
+    <div class="header-gallery">
+      <div class="cell-sm-6">
+        <h3>Our Gallery</h3>
+      </div>
+      <div class="cell-sm-6 text-sm-right">
+        <a class="heading-link link-gray-darker" href="#">See All Photos</a>
+      </div>
+    </div>
+    <hr />
+    <div class="gallery-wrapper">
+      <div class="gallery-item" tabindex="0">
+        <img src="~/public/image/gallery-1-420x584.jpg" class="gallery-image" alt="" />
+
+        <div class="gallery-item-info">
+          <ul>
+            <li class="gallery-item-likes"><font-awesome-icon icon="fa-solid fa-heart" /> 56</li>
+            <li class="gallery-item-comments"><font-awesome-icon icon="fa-solid fa-eye" /> 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-item" tabindex="1">
+        <img src="~/public/image/gallery-2-420x278.jpg" class="gallery-image" alt="" />
+
+        <div class="gallery-item-info">
+          <ul>
+            <li class="gallery-item-likes"><font-awesome-icon icon="fa-solid fa-heart" /> 56</li>
+            <li class="gallery-item-comments"><font-awesome-icon icon="fa-solid fa-eye" /> 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-item" tabindex="2">
+        <img src="~/public/image/gallery-3-584x800_original.jpg" class="gallery-image" alt="" />
+
+        <div class="gallery-item-info">
+          <ul>
+            <li class="gallery-item-likes"><font-awesome-icon icon="fa-solid fa-heart" /> 56</li>
+            <li class="gallery-item-comments"><font-awesome-icon icon="fa-solid fa-eye" /> 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-item" tabindex="3">
+        <img src="~/public/image/gallery-4-1200x800_original.jpg" class="gallery-image" alt="" />
+
+        <div class="gallery-item-info">
+          <ul>
+            <li class="gallery-item-likes"><font-awesome-icon icon="fa-solid fa-heart" /> 56</li>
+            <li class="gallery-item-comments"><font-awesome-icon icon="fa-solid fa-eye" /> 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-item" tabindex="4">
+        <img src="~/public/image/gallery-5-1200x800_original.jpg" class="gallery-image" alt="" />
+
+        <div class="gallery-item-info">
+          <ul>
+            <li class="gallery-item-likes"><font-awesome-icon icon="fa-solid fa-heart" /> 56</li>
+            <li class="gallery-item-comments"><font-awesome-icon icon="fa-solid fa-eye" /> 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-item" tabindex="5">
+        <img src="~/public/image/gallery-6-1200x798_original.jpg" class="gallery-image" alt="" />
+
+        <div class="gallery-item-info">
+          <ul>
+            <li class="gallery-item-likes"><font-awesome-icon icon="fa-solid fa-heart" /> 56</li>
+            <li class="gallery-item-comments"><font-awesome-icon icon="fa-solid fa-eye" /> 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-content">
+    <div class="header-content">
+      <h3>Our Blog</h3>
+    </div>
+    <hr />
+    <div class="blog-wrapper">
+      <div class="card">
+        <div class="image-data">
+          <div class="background-image">
+            <img src="~/public/image/blog-01-460x369.jpg" alt="" />
+          </div>
+          <div class="publication-details">
+            <a href="" class="author">
+              <font-awesome-icon icon="fa-regular fa-thumbs-up" />
+              220
+            </a>
+            <spam class="date"><font-awesome-icon icon="fa-solid fa-clock" /> March 30, 2020</spam>
+          </div>
+        </div>
+        <div class="post-data">
+          <h1 class="title">Top 3 Reasons Why Royal Villas Offers the Best Spa Procedures</h1>
+          <div class="cta">
+            <a href="#">Read more &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-data">
+          <div class="background-image">
+            <img src="~/public/image/blog-02-460x369.jpg" alt="" />
+          </div>
+          <div class="publication-details">
+            <a href="" class="author">
+              <font-awesome-icon icon="fa-regular fa-thumbs-up" />
+              40
+            </a>
+            <spam class="date"><font-awesome-icon icon="fa-solid fa-clock" /> October 26, 2017</spam>
+          </div>
+        </div>
+        <div class="post-data">
+          <h1 class="title">Featured Therapies and Activities at Royal Villas Spa Resort and Hotel</h1>
+          <div class="cta">
+            <a href="#">Read more &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-data">
+          <div class="background-image">
+            <img src="~/public/image/blog-03-460x369.jpg" alt="" />
+          </div>
+          <div class="publication-details">
+            <a href="" class="author">
+              <font-awesome-icon icon="fa-regular fa-thumbs-up" />
+              15
+            </a>
+            <spam class="date"><font-awesome-icon icon="fa-solid fa-clock" /> August 23, 2017</spam>
+          </div>
+        </div>
+        <div class="post-data">
+          <h1 class="title">Why Your Relaxing Getaway Starts Here</h1>
+          <div class="cta">
+            <a href="#">Read more &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script lang="ts" setup>
 import CardProduct from '~~/components/generals/cardProduct.vue'
@@ -189,8 +318,10 @@ definePageMeta({
 
 <style lang="scss" scoped>
 .container-main {
+  width: 93%;
+  margin: 0 auto;
   display: flex;
-  padding: 0 20px;
+  padding: 0 15px;
   .banner-wrapper {
     position: relative;
     width: 1350px;
@@ -258,6 +389,7 @@ definePageMeta({
 
   .hotel-booking-form {
     width: 100%;
+    height: 657px;
     text-align: left;
     padding: 70px 50px 60px;
     color: #000;
@@ -295,7 +427,9 @@ definePageMeta({
 }
 .content-video {
   display: flex;
-  padding: 55px 20px 70px 20px;
+  width: 93%;
+  margin: 0 auto;
+  padding: 55px 15px 70px 15px;
   .box-text-about {
     display: flex;
     align-items: center;
@@ -386,6 +520,252 @@ definePageMeta({
     }
   }
 }
+.gallery-content {
+  margin: 0 auto;
+  padding: 95px 15px 60px 15px;
+  width: 93%;
+
+  .header-gallery {
+    display: flex;
+    justify-content: space-between;
+    color: $dark-color;
+    .cell-sm-6 {
+      max-width: 50%;
+      h3 {
+        line-height: 1;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      a {
+        color: $dark-color;
+        text-decoration: none;
+        transition: all 250ms ease-in;
+      }
+      a:hover {
+        color: #8f859e;
+      }
+    }
+  }
+  hr {
+    border: none;
+    margin-top: 20px;
+    border-top: 1px solid #ebebeb;
+  }
+  .gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .gallery-item {
+      position: relative;
+      flex: 1 0 22rem;
+      margin: 1rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover .gallery-item-info,
+    .gallery-item:focus .gallery-item-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-item-info {
+      display: none;
+    }
+
+    .gallery-item-info li {
+      display: inline-block;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    .gallery-item-likes {
+      margin-right: 2.2rem;
+    }
+    .gallery-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.blog-content {
+  margin: 0 auto;
+  padding: 0 15px 50px 15px;
+  width: 93%;
+  .header-content {
+    color: $dark-color;
+
+    h3 {
+      line-height: 1;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+  hr {
+    border: none;
+    margin-top: 20px;
+    border-top: 1px solid #ebebeb;
+  }
+  .blog-wrapper {
+    display: flex;
+    margin-top: 50px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.5);
+      background-color: $white;
+      margin-right: 30px;
+      width: calc(100% / 3);
+      .image-data {
+        height: 25rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          // background: url('~/public/image/blog-01-460x369.jpg') center no-repeat;
+          background-size: cover;
+          z-index: -1;
+          transition: transform 5s;
+        }
+
+        .publication-details {
+          width: 100%;
+          height: 100%;
+          background: #8f859e;
+          font-size: 1.4rem;
+          color: $white;
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 1rem;
+          opacity: 0.5;
+          i {
+            margin-right: 1rem;
+          }
+          .author {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            transition: all 0.5s;
+            @include pc {
+              transform: translateY(-3rem);
+              opacity: 0;
+              transition-delay: 0.3s;
+            }
+            &:hover {
+              color: rgba($white, 0.75);
+            }
+          }
+          .date {
+            display: block;
+            @include pc {
+              transform: translateY(3rem);
+              opacity: 0;
+              transition: all 0.5s 0.3s;
+            }
+          }
+          @include pc {
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+          }
+        }
+        @include pc {
+          flex-basis: 45%;
+          height: unset;
+        }
+      }
+      .post-data {
+        background-color: $white;
+        padding: 2rem 3rem;
+        position: relative;
+        .title {
+          color: $dark-color;
+          font-size: 24px;
+          line-height: 1;
+        }
+        .cta {
+          text-align: right;
+          font-weight: bold;
+          margin-top: 1rem;
+          a {
+            background: #8f859e;
+            -webkit-background-clip: text;
+            color: transparent;
+            position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: -0.5rem;
+              width: 100%;
+              height: 3px;
+              background: #8f859e;
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: transform 0.5s;
+            }
+            &:hover {
+              &:before {
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+        &:before {
+          @include pc {
+            content: '';
+            width: 3.5rem;
+            height: 100%;
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            left: -1.5rem;
+            z-index: 10;
+            transform: skewx(-5deg);
+          }
+        }
+        @include pc {
+          flex-basis: 55%;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.5);
+        }
+        .publication-details {
+          @include pc {
+            transform: translateX(0%);
+          }
+          .author,
+          .date {
+            @include pc {
+              transform: translateY(0%);
+              opacity: 1;
+            }
+          }
+        }
+      }
+      @include pc {
+        flex-direction: row;
+        max-width: 55rem;
+      }
+    }
+    .card:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+}
 .list-desc {
   display: flex;
   dd {
@@ -397,5 +777,9 @@ definePageMeta({
 }
 .btn-wrapper {
   margin-top: 40px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

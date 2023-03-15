@@ -91,11 +91,7 @@ const borderBackgroundStyle = computed(() => {
 
 <style lang="scss" scoped>
 .container-input {
-  // margin: auto;
   width: 100%;
-  @include pc {
-    max-width: 680px;
-  }
 }
 
 .sub-container {

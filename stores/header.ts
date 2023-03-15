@@ -3,7 +3,6 @@ import axios from 'axios'
 import { HeaderState } from '~/utils/types/state/header'
 
 export const useHeaderStore = defineStore('header', () => {
-
   const state = reactive<HeaderState>({
     headerList: [],
   })
@@ -15,10 +14,7 @@ export const useHeaderStore = defineStore('header', () => {
 
   const initProcess = async () => {
     try {
-      const [headerList] = await Promise.all([
-        axios.get('/header.json'),
-      ])
-      console.log(headerList)
+      const [headerList] = await Promise.all([axios.get('/header.json')])
       state.headerList = headerList.data
     } catch (e: any) {
       if (e.response && axios.isAxiosError(e) && [400, 422].includes(e.response.status)) {

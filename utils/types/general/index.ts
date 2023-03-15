@@ -1,11 +1,7 @@
 export type Header = {
-  tittle: string | null
+  text: string | null
+  to: string | null
 }
-
-
-
-
-
 
 export type DataDropDown = {
   value: number | string

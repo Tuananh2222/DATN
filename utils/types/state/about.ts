@@ -1,5 +1,5 @@
 import { email } from '@vuelidate/validators'
-export type VoucherState = {
+export type contactState = {
   username: string
   tel: string
   email: string
