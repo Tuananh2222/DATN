@@ -219,3 +219,28 @@ p {
     @include icon($iconName);
   }
 }
+.divider {
+  display: inline-block;
+  margin-bottom: 0;
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: #8f859e;
+}
+.divider-custom {
+  position: relative;
+  background-color: #ddd;
+}
+
+.divider-custom:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  border-top: 1px solid #8f859e;
+  content: '';
+  display: inline-block;
+}
+.divider-left {
+  margin-left: 0;
+}

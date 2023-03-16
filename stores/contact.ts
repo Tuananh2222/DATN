@@ -1,7 +1,7 @@
 import { reactive } from 'vue'
 import { email, required, maxLength, helpers } from '@vuelidate/validators'
 import axios from 'axios'
-import { contactState } from '~~/utils/types/state/about'
+import { contactState } from '~~/utils/types/state/contact'
 
 export const useContactStore = defineStore('about', () => {
   const { $axios } = useNuxtApp()
