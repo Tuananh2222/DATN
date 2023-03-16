@@ -4,6 +4,9 @@ import { passwordValidate } from '~~/utils/constant/validate'
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth'
 
 import _ from 'lodash'
+import { getCurrentUser } from 'vuefire'
+
+getCurrentUser
 
 const defaultState = {
   hasErrors: {
@@ -60,7 +63,7 @@ export const useSignUpStore = defineStore('signup', () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user
-        sendEmailVerification()
+        sendEmailVerification(user)
         console.log(user)
         // ...
       })

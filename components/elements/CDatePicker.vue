@@ -1,11 +1,12 @@
 <template>
   <div class="dx-field-value">
-    <DxDateBox :value="now" type="date" :display-format="$dayjs" />
+    <v-calendar :mode="$dayjs" />
   </div>
 </template>
 
 <script setup lang="ts">
-import DxDateBox from 'devextreme-vue/date-box'
+import { Calendar as VCalendar } from 'v-calendar'
+import 'v-calendar/dist/style.css'
 const { $dayjs } = useNuxtApp()
 
 const now = new Date()

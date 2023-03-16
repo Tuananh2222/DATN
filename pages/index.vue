@@ -324,11 +324,11 @@ definePageMeta({
   padding: 0 15px;
   .banner-wrapper {
     position: relative;
-    width: 1350px;
+    width: 70%;
     height: 657px;
     @include sp {
       margin-top: -79px;
-      width: 100%;
+      width: 50%;
     }
 
     .banner-slide {
@@ -341,7 +341,7 @@ definePageMeta({
           width: 100%;
         }
         .img-slide {
-          width: 1320px;
+          width: 100%;
           height: 657px;
           background-size: cover;
           object-fit: cover;
@@ -367,7 +367,7 @@ definePageMeta({
             color: $white;
             h1 {
               font-weight: 700;
-              font-size: 95px;
+              font-size: 55px;
             }
             .slider-subtitle-group {
               margin-left: 58px;
@@ -455,6 +455,14 @@ definePageMeta({
           margin-right: 10px;
           dt {
             color: #dcd1d5;
+            @include sp {
+              font-size: 14px;
+            }
+          }
+          @include sp {
+            dd {
+              font-size: 14px;
+            }
           }
         }
       }
