@@ -109,11 +109,7 @@
       <!-- Intro -->
       <section id="intro">
         <header>
-          <h2>Future Imperfect</h2>
-          <p>
-            Another fine responsive site template by
-            <a href="http://html5up.net">HTML5 UP</a>
-          </p>
+          <h2>BLOG</h2>
         </header>
       </section>
 
