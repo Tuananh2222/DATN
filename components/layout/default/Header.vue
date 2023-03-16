@@ -64,10 +64,6 @@ const headerList = [
     to: '/contact',
   },
   {
-    text: 'Typography',
-    to: '/typography',
-  },
-  {
     text: 'Blog',
     to: '/blog',
   },
