@@ -61,7 +61,7 @@
         </div>
         <div class="cell-sm-6">
           <p class="text-uppercase">Arrival</p>
-          <CDatePicker />
+          <!-- <CDatePicker /> -->
         </div>
         <div class="cell-sm-6">
           <p class="text-uppercase">Departure</p>
